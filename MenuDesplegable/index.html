@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css"
+        integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css"
+        integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="MainContainer">
+
+        <aside class="menu">
+
+            <div id="admin">
+
+                <img id="adminFoto" src="LogoAdmin.png" alt="foto" width="50" height="50">
+
+                <h1 id="adminText" style="margin:0px">Administration </h1>
+
+            </div>
+
+            <div id="profileInfo">
+
+                <img id="profileImg" src="ProfileImage.jpg" alt="foto" width="50" height="50">
+
+                <p id="userText">User Name</p>
+
+            </div>
+
+            <div>
+
+                <ul type="none" class="list">
+
+                    <div id="menuTitle">
+
+                        <p>MENU</p>
+
+                    </div>
+
+                    <li id="CA" class="listItem" onclick="MostrarEnDom(this.id)">
+
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        Customer accounts
+
+                    </li>
+
+                    <li id="AM" class="listItem" onclick="MostrarEnDom(this.id)">
+
+                        <i class="fa fa-credit-card" aria-hidden="true"></i>
+                        Access media
+
+                    </li>
+
+                    <li id="ST" class="listItem" onclick="MostrarEnDom(this.id)">
+
+                        <i class="fa fa-signal" aria-hidden="true"></i>
+                        Statistics
+
+                    </li>
+
+                    <li id="DV" class="listItem" onclick="MostrarEnDom(this.id)">
+
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                        Devices
+
+                    </li>
+
+                    <li id="TF" class="listItem" onclick="MostrarEnDom(this.id)">
+
+                        <i class="fa fa-ticket" aria-hidden="true"></i>
+                        Tarification
+
+                    </li>
+
+                    <li id="AA" class="listItem" onclick="MostrarEnDom(this.id)">
+
+                        <i class="fa fa-shield" aria-hidden="true"></i>
+                        Agents account
+
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <main>
+
+            <div class="topBar">
+
+                <button id="botonBurger" onclick="Desplegar()">
+
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+
+                </button>
+
+                <div class="simboloIdioma">
+
+                    <img class="ukImg" src="uk.png" style="width: 30px;">
+
+                </div>
+
+                <div class="seleccionIdioma">
+
+                    <select>
+
+                        <option value="uk">English</option>
+                        <option value="uk">Español</option>
+                        <option value="uk">Deutsch</option>
+                        <option value="uk">Italiano</option>
+
+                    </select>
+                </div>
+
+                <div class="logout">
+
+                    <i class="fa fa-sign-out" aria-hidden="true">
+                        Sign Out
+                    </i>
+
+                </div>
+
+            </div>
+
+            <div class="titulo">
+
+                <h1 id="clicRequest">
+                </h1>
+        
+            </div>
+
+        </main>
+
+    </div>    
+    <script src="script.js"></script>
+</body>
+
+</html>
